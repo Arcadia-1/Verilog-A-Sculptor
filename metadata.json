@@ -1,0 +1,5 @@
+{
+  "name": "Verilog-A Sculptor",
+  "description": "An advanced AI-powered assistant for generating, documenting, and refining Verilog-A analog behavioral models for circuit simulation.",
+  "requestFramePermissions": []
+}
