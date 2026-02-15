@@ -5,7 +5,7 @@ import { BlockParams } from "../types";
 let activeChat: Chat | null = null;
 
 export const startNewSession = (envParams: BlockParams, customization?: string) => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || process.env.API_KEY });
 
   const transitionLogic = envParams.transitionStyle === 'global-macro' 
     ? "Define `define default_transition 10p` at the top. Use it for all transition() calls."
